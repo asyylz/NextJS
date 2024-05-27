@@ -41,8 +41,6 @@
         <li>Dynamic Routing</li>
         </ul>
     </section>
-
-
     <section id="getting-started">
         <h2>Getting Started</h2>
         <p>To get started with the repository, follow these steps:</p>
