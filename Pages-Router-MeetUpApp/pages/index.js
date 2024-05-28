@@ -1,20 +1,20 @@
-
 import MeetupList from '../components/meetups/MeetupList';
 import { MongoClient } from 'mongodb';
+import Head from 'next/head';
 export default function HomePage(props) {
-  return <MeetupList meetups={props.meetups} />;
+  return (
+    <>
+      <Head>
+        <title>React Meetups</title>
+        <meta
+          name="description"
+          content="Browse a huge liste of hihgly active React meetups!"
+        />
+      </Head>
+      <MeetupList meetups={props.meetups} />;
+    </>
+  );
 }
-
-// export async function getServerSideProps(context) {
-//   const req = context.req;
-//   const res = context.res;
-
-//   return {
-//     props: {
-//       meetups: DUMMY_MEETUPS,
-//     },
-//   };
-// }
 
 // SSG
 
