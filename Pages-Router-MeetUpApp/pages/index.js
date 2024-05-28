@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+
 import MeetupList from '../components/meetups/MeetupList';
 import { MongoClient } from 'mongodb';
 export default function HomePage(props) {
@@ -20,8 +20,8 @@ export default function HomePage(props) {
 
 export async function getStaticProps() {
   const client = await MongoClient.connect(
-  
-     'mongodb+srv://username:password@cluster0.diaashw.mongodb.net/meetups'
+   
+    // 'mongodb+srv://username:password@cluster0.diaashw.mongodb.net/meetups'
   );
   const db = client.db();
   const meetupsCollection = db.collection('meetups');
